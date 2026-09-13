@@ -1,93 +1,105 @@
 ![NavbarGit](frontend/src/assets/images/NavbarGit.png)
 
-# 🚗 Sistema de Controle de Estacionamento
+# 🚗 Parking Management System
 
-Projeto completo de gerenciamento de estacionamento, desenvolvido em **Spring Boot** com front-end integrado.  
-Permite cadastro de veículos, controle de entrada/saída, relatórios e autenticação de usuários.
+Complete parking management project developed with **Spring Boot** and an integrated front end.
+It supports vehicle registration, entry and exit control, reports, and user authentication.
 
 ---
 
-## ✨ Funcionalidades
+## ✨ Features
 
 ### Back-end
-- Cadastro de veículos (placa, modelo, cor)
-- Registro de entrada/saída com cálculo automático de permanência
-- Geração de relatórios diários (PDF/CSV)
-- Autenticação JWT para acesso seguro
+- Vehicle registration (license plate, model, and color)
+- Entry and exit records with automatic parking duration calculation
+- Daily report generation (PDF/CSV)
+- JWT authentication for secure access
 
 ### Front-end
-- Interface Web responsiva (React)
-- Login e registro de usuários
-- Dashboard com métricas em tempo real
-- Formulários para cadastro de veículos e pagamentos
+- Responsive web interface (React)
+- User login and registration
+- Dashboard with real-time metrics
+- Forms for vehicle registration and payments
 
 ---
 
-## 🔧 Tecnologias Utilizadas
+## 🔧 Technologies Used
 
 ### Back-end
 - Java 21
 - Spring Boot 3.2
 - Spring Security
 - Spring Data JPA
-- H2 Database (testes)
+- H2 Database (testing)
 - Lombok
 - OpenAPI (Swagger)
 
 ### Front-end
 - React 18
-- Axios (integração com API)
+- Axios (API integration)
 - Bootstrap 5
 
-### Testes
+### Testing
 - Mockito
 - Pitest (mutation testing)
 
 ---
 
-## 🚀 Configuração e Execução
+## 🚀 Setup and Execution
 
-### Pré-requisitos
+### Prerequisites
 - Java 21
 - Node.js 18+
-- MySQL 8+ (opcional para produção)
+- MySQL 8+ (optional for production)
 
 ### Back-end
 
-Clonar repositório
-git clone https://github.com/Alan-VSouza/Projeto-Estacionamento.git
+Clone the repository:
+```bash
+git clone https://github.com/lokesh95225/Parking-Management-System.git
+```
 
-Entrar na pasta do projeto
-cd Projeto-Estacionamento/backend
+Enter the back-end directory:
+```bash
+cd Parking-Management-System/backend
+```
 
-Executar aplicação através da execução de DemoAuthAppApplication
+Run the application by starting `DemoAuthAppApplication`.
 
 ### Front-end
-cd Projeto-Estacionamento/frontend
 
-Instalar dependências
+Enter the front-end directory:
+```bash
+cd Parking-Management-System/frontend
+```
+
+Install the dependencies:
+```bash
 npm install
+```
 
-Executar aplicação
+Start the application:
+```bash
 npm start
+```
 
-Acesse: `http://localhost:3000`
+Open `http://localhost:3000` in your browser.
 
-## 🔒 Autenticação
-A autenticação é protegidos por JWT. Sendo utilizado os Endpoints:
-- **Registro:** POST `/api/auth/register`
-- **Login:** POST `/api/auth/login`
+## 🔒 Authentication
+Authentication is protected by JWT. The following endpoints are available:
+- **Registration:** `POST /api/auth/register`
+- **Login:** `POST /api/auth/login`
 
-Faça o registro na página de Register e o devido Login para ter acesso as funções.
+Register on the registration page and then log in to access the application features.
 
 ---
 
-## 📊 Qualidade
-![Cobertura de Código](https://img.shields.io/badge/coverage-100%25-brightgreen)
-![Mutantes Mortos](https://img.shields.io/badge/mutants-99%25-brightgreen)
+## 📊 Quality
+![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
+![Killed Mutants](https://img.shields.io/badge/mutants-99%25-brightgreen)
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
 
 ---
 
-## 📄 Documentação da API
-Acesse `http://localhost:8080/swagger-ui.html` após iniciar o back-end.
+## 📄 API Documentation
+Visit `http://localhost:8080/swagger-ui.html` after starting the back end.
